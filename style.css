@@ -181,11 +181,17 @@ h2{
     padding-bottom: 20px;
 }
 
+ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
 .footer li {
     padding: 5px 0px 5px 0px;
 }
 
 .containerfooter {
-    adding-top: 30px;
+    padding-top: 30px;
     margin-left: -180px;
 }
