@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.eot');
+    src: url('fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/Raleway-Bold.woff') format('woff'),
+        url('fonts/Raleway-Bold.ttf') format('truetype'),
+        url('fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.eot');
+    src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/Raleway-Regular.woff') format('woff'),
+        url('fonts/Raleway-Regular.ttf') format('truetype'),
+        url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0 3.5%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    max-width: 1440px;
+    
+}
+
+.searchicon {
+    color: #0065fc;
+    padding: 5px 5px;
+    border-radius: 100%;
+}
+
+.sectionlpp .fa-chart-line {
+    color: #000000;
+    padding-right: 0px;
+    font-size: 1.2em;
+}
+
+.containericon .startrue {
+    color: #0065fc;
+    padding: 0px;
+    margin: 0px;
+}
+
+.starfalse {
+    color: #f2f2f2;
+}
+
+.containericon {
+    display: inline-flex;
+}
+
+a {
+   text-decoration: none;
+   color: #000000; 
+}
+
+.header {
+    height: 5%;
+    width: 100%;   
+    display: flex;
+    justify-content: space-between
+}
+
+.headerimg {
+    padding-top: 40px;    
+}
+
+.headernav {
+    margin: 20px 0;
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.headernavlink:hover {
+    color: blue
+} 
+
+.headernavlink {
+    color: rgb(0, 0, 0);
+    text-decoration-line: none;
+    border-top: solid 2px #0065fc;
+}
+
+.register {
+    color: #0065fc;
+    font-weight: 700;
+}
+
+.searchsection .searchheadertitle {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.searchinput i {
+    color: #000000;
+}
+
+.search {
+    width: 234px;
+    height: 47px;
+    margin: 0px;
+    padding: 0 0 0 15px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-right:none;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.value {
+    color: #000000;
+    opacity: 1;
+}
+
+.form button {
+    background-color: #0065FC;
+    color: #FFFFFF;
+    width: 134px;
+    height: 51px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border:none;
+    margin-bottom:30px;
+    padding: 4px 8px 1px 8px
+}
+
+form button .searchincone {
+    display: none;
+}
+
+
+
+.main {
+    background:  lightgray;
+    margin: 10px 10px;
+    padding: 20px 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+
+
+
+
+.footer {
+    background-color: #F2F2F2 ;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+}
+
+.footer li {
+    padding: 5px 0px 5px 0px;
+}
+
+.containerfooter {
+    adding-top: 30px;
+    margin-left: -180px;
+}
