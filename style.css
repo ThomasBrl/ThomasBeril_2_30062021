@@ -24,9 +24,6 @@
     font-display: swap;
 }
 
-* {
-    box-sizing: border-box; 
-}
 /*General*/
 html {
     background-color: #ffffff;
@@ -46,6 +43,23 @@ a {
     color: #000000; 
 }
 
+.texteGras {
+    font-weight: bold;
+}
+
+.main {
+    margin: 10px 10px;
+    padding: 20px 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2{
+    font-size: 16px;
+}
+
 .borderNone{
     border: none;
 }
@@ -60,12 +74,55 @@ a {
 .colorGrey {
   color: #f2f2f2;  
 }
+
+.backGrey {
+    background: #F2F2F2;
+}
+
+.flexcentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColumncenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+.flexColumnBetwenn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
 /*General*/
 
 /*Header*/
-.header {
-    height: 5%;
-    width: 100%;       
+.sizeNav {
+    height: 100%;
+}
+
+.sizeLiens {
+    width: 100%;
 }
 
 .flexaround {
@@ -75,22 +132,26 @@ a {
     width: 45%;
 }
 
-.flexcenter {
+.sizeLien {
     width: 140px;
-    height: 99px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 99px;    
 }
 
-.headernav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.sizeLien12 {
+    margin-left: 60%;
 }
 
 .bordernav {
-    border-top: solid 1px #0065fc;
+    border-top: solid 1px transparent;
+}
+
+.bordernav:hover {
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
+}   
+
+.bordernav:hover > a {
+    color: #0065fc;
 }
 
 .colorlink {
@@ -105,18 +166,11 @@ a {
 
 /*Searchsection*/
 
-.flexcentre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .borduresearch {
     width: 400px;
     border-radius: 10px;
     border: 0.5px solid #F2F2F2 ;
-    background: rgb(200, 200, 200);
-
+    background: #f2f2f2;
 }
 
 .iconSize {
@@ -151,6 +205,7 @@ a {
     
 }
 
+/*Searchsection*/
 
 /*Filtres*/
 .margFiltre {
@@ -168,6 +223,7 @@ a {
 }
 
 .filtreIcons {
+    margin-left: -2px;
     border-radius: 25px;
     width: 52px;
     height: 52px;
@@ -222,36 +278,163 @@ a {
 
 /*Infos Icone*/
 
-/*Searchsection*/
-.main {
-    margin: 10px 10px;
-    padding: 20px 20px;
+/*HEBERGEMENTS*/
+.sizeHebergements {
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
-.sectionlpp .fa-chart-line {
-    color: #000000;
-    padding-right: 0px;
-    font-size: 1.2em;
+.blockHebergements {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.containericon .startrue {
-    color: #0065fc;
-    padding: 0px;
-    margin: 0px;
+.block1 {
+    margin-bottom: 10px;
 }
 
-.starfalse {
-    color: #ffffff;
+.block2 {
+    margin-top: 10px;
 }
 
-h1 {
-    font-size: 20px;
+.cubeHebergements {
+    width: 30%;
+    height: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
 }
 
-h2{
-    font-size: 16px;
+.cubeHebergements:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
+.cubeDetailsHebergements {
+    width: 90%;
+}
+.imghebergements1 {
+    background-image: url("./hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergements2 {
+    background-image: url("./hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergements3 {
+    background-image: url("./hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergements4 {
+    background-image: url("./hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergements5 {
+    background-image: url("./hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergements6 {
+    background-image: url("./hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+/*HEBERGEMENTS*/
+
+/*POPULAIRES*/
+
+.sizePopulaires {
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.blockPopulaires {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blockPopulaires12 {
+    margin-bottom: 22px;
+}
+
+.cubePopulaires {
+    background-color: white;
+    height: 160px;
+    padding: 1% 0 1% 1%;
+    border-radius:  20px;
+}
+
+.cubePopulaires:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cubeDetailsPopulaires {
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.imgPopulaires1 {
+    background-image: url("./hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+
+.imgPopulaires2 {
+    background-image: url("./hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+
+.imgPopulaires3 {
+    background-image: url("./hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+
+/*POPULAIRES*/
 
 /*Footer*/
 .footer {
