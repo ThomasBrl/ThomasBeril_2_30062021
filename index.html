@@ -10,65 +10,77 @@
 
     <body>
         <header class="header">
-            <div class="divimgheader">
-                <img class="headerimg" src="Logo/Reservia.svg" alt="logoreservia" />
-            </div>
-            <nav class="headernav">  
-                <a class="headernavlink" href="#hébergements">Hébergements</a>
-                <a class="headernavlink" href="#activités">Activités</a>
-                <a class="register" href="a">S'inscrire</a>
+            <nav class="headernav">
+                <div class="divimgheader">
+                    <img class="headerimg" src="Logo/Reservia.svg" alt="logoreservia" />
+                </div>
+                <div class="sizeliens flexaround">
+                    <div class="bordernav flexcenter">  
+                        <a class="colorlink headernavlink" href="#hébergements">Hébergements</a>
+                    </div>
+                    <div class="flexcenter">
+                        <a class="headernavlink" href="#activités">Activités</a>
+                    </div>
+                    <div class="flexcenter">
+                        <a class="register" href="a">S'inscrire</a>
+                    </div>
+                </div>
             </nav>
         </header>
                        
         <main class="main">
             <section class="searchsection">
-                <h1 class="searchheadertitle">Trouver votre hébergement pour des vacances de rêve</h1>
-                <p class="searchheaderdescr">En plein centre ville ou en pleine nature</p>
-                <div class="searchdivinput">
-                    <form action="/app.php" method="POST">
-                        <div class="searchinput">
-                            <i class="fas fa-map-marker-alt searchicone searchicon"></i>
-                        </div>
-                        <input id="search" name="search" value="Marseille, France" type="search" class="searchinput">
-                        <input value="Rechercher" class="searchbutton" type="submit">
-                    </form>
+                <div class="">
+                    <h1 class="searchheadertitle">Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p class="searchheaderdescr">En plein centre ville ou en pleine nature</p>
                 </div>
-
-                <div class="searchfilterdiv">
-                    <p class="searchfiltertitle">Filtres</p>
-                    <div class="searchcontainerbuttton">
-                        <button class="searchbuttoneco" type="button">
-                            <span class="searchbubbleeco">
-                                <i class="fas fa-money-bill-wave filterecoIcone searchicon"></i>
-                             </span>
-                            <span class="searchbubbletitle">Économique</span>
-                        </button>
-
-                        <button class="searchbuttonfam">
-                            <span class="searchbubblefam">
-                                <i class="fas fa-child filterfamIcone searchicon"></i>
-                            </span>
-                            <span class="searchbubbletitle">Familial</span>
-                        </button>
-
-                        <button class="searchbuttonrom">
-                            <span class="searchbubblerom">
-                                <i class="fas fa-heart filterromicon searchicon"></i>
-                            </span>
-                            <span class="searchbubbletitle">Romantique</span>
-                        </button>
-
-                        <button class="searchbuttonanim">
-                            <span class="searchbubbleanim">
-                                <i class="fas fa-dog filteranimicon searchicon"></i>
-                            </span>
-                            <span class="searcbubbletitle">Animaux autorisés</span>
-                        </button>
+                <div class="borduresearch flexcentre">
+                    <div class="backGris flexcentre iconSize">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <input class="recherche flexcentre borderNone paddingSearch" value="Marseille, France" type="search">
+                    </div>
+                    <div class="backblue flexcentre buttonSearch">
+                        Rechercher
                     </div>
                 </div>
-                <div class="Infos">
-                    <span class="infobubble">
-                        <i class="fas fa-info-circle searchicon"></i>
+
+                <div class="filtre margFiltre">
+                    <h3 class="margFiltreTitre">Filtres</h3>
+
+                    <div class="filtreTexteIcons flexBetween">
+                        <i class="fas fa-money-bill-wave fa-lg filtreIcons flexcentre"></i>
+                        <div class="filtreTexte flexcentre">
+                            Économique
+                        </div>
+                    </div>
+
+                    <div class="filtreTexteIcons flexBetween">
+                        <i class="fas fa-child fa-lg filtreIcons flexcentre"></i>
+                        <div class="filtreTexte flexcentre">
+                            Familial
+                        </div>
+                    </div>
+
+                    <div class="filtreTexteIcons flexBetween">
+                        <i class="fas fa-heart fa-lg filtreIcons flexcentre"></i>
+                        <div class="filtreTexte flexcentre">
+                            Romantique
+                        </div>
+                    </div>
+
+                    <div class="filtreTexteIcons flexBetween">
+                        <i class="fas fa-dog fa-lg filtreIcons flexcentre"></i>
+                        <div class="filtreTexte flexcentre">
+                             Animaux autorisés
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <span class="infobubble flexcentre">
+                        <i class="fas fa-info fa-xs colorBlue"></i>
                     </span>
                     <p class="infotexte">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
