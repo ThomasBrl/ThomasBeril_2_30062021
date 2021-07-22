@@ -36,7 +36,7 @@ html {
 
 body {
     margin: 0;
-    max-width: 1440px;    
+    max-width: 90em;    
 }
 
 a {
@@ -286,11 +286,11 @@ h2{
 #premierBlock {
     display: flex;
     width: 100%;
-    margin: 0 0 40px 0;
+    margin: 0 0 2.5em 0;
 }
 
 #hebergements span {
-    padding: 20px 0 40px 30px;
+    padding: 2.1em 0 2.5em 2.9em;
     font-weight: bold;
 }
 
@@ -298,16 +298,16 @@ h2{
     display: flex;
     flex-wrap: wrap;
     align-items:stretch;
-    border-radius:20px;
+    border-radius:1em;
     background-color: #F2F2F2;
     margin-right: 3%;
     width: 65%;
-    height: 626px;
+    height: 39em;
 }
 
 #hebergements h2 {
-    padding-left: 30px;
-    margin: 40px 0 0 0;
+    padding-left: 2.5em;
+    margin: 1.7em 0 0 0;
 }
 
 #blockCards {
@@ -318,15 +318,15 @@ h2{
 }
 
 .hebCard {
-    width: 250px;
+    width: 15.6em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px;
+    padding: 0.3em;
     background-color: #FFFFFF;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #F2F2F2;
+    margin: 0.6em;
+    border-radius: 1.2em;
+    box-shadow: 0 0 1em 1em #F2F2F2;
 }
 
 .hebCard:hover {
@@ -335,23 +335,23 @@ h2{
 }
 
 #hebergements img {
-    height: 115px;
+    height: 7.2em;
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 1em 1em 0 0;
 }
 
 .hebergementsTxt {
-    padding: 5px 0 0 10px;
+    padding: 0.3em 0 0 0.6em;
 }
 
 #hebergements p, ul {
     width: 100%;
-    padding: 5px 0px;
-    margin: 0px;
+    padding: 0.3em 0;
+    margin: 0;
 }
 
 .hebergementsTxt :first-child, .cubeDetails :nth-child(1) {
-    font-weight: 700 ;
+    font-weight: 900 ;
 }
 
 /* HEBERGEMENTS */
@@ -362,21 +362,21 @@ h2{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2 ;
-    border-radius: 20px;
-    margin-right: 0px;
+    border-radius: 1em;
+    margin-right: 0;
     width: 32%;
-    height: 626px;
+    height: 39em;
 }
 
 #titreLPP {
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 0px 30px;
+    padding: 0.6em 2.5em 0 1.8em;
     align-items: center;
 }
 
 #titreLPP h2 {
-    margin: 30px 0 20px 0;
+    margin: 1.8em 0 1.3em 0;
 }
 
 #blockcardslpp {
@@ -393,40 +393,40 @@ h2{
 }
 
 .cardLPP {
-    height: 140px;
+    height: 8.75em;
     display: flex;
-    width: 370px;
-    padding: 5px;
+    width: 22.5em;
+    padding: 0.3em;
     background-color: #FFFFFF;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #F2F2F2;
+    margin: 0.625em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.6em 0.3em #F2F2F2;
 }
 
 .cardLPP img {
-    width: 140px;
+    width: 8.75em;
     object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 1em 0 0 1em;
 }
 
 .cubeDetails {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 0.6em;
     justify-content: center;
-    width: 180px;
+    width: 11.25em;
 }
 
 .hotelName {
-    margin: 15px 0 10px 0;
+    margin: 0.9em 0 0.6em 0;
 }
 
 .prix {
-    margin: 0 0 30px 0;
+    margin: 0 0 1.8em 0;
 }
 
 .cardLPP li {
-    padding-bottom: 15px;
+    padding-bottom: 0.9em;
 }
 
 /* LES PLUS POPULAIRES */
@@ -436,11 +436,11 @@ h2{
 #activites {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 1.9em;
 }
 
 #activitesTitre {
-    margin: 20px 0 10px 0;
+    margin: 3.1em 0 0.6em 0;
 }
 
 #activites h2 {
@@ -460,34 +460,34 @@ h2{
 }
 
 #activites p {
-    padding: 15px 0px 15px 10px;
-    margin: 0px;
+    padding: 0.9em 0 0.9em 0.6em;
+    margin: 0;
     font-weight: bolder;
 }
 
 .acitiviteSelection {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px 5px #F2F2F2;
-    margin: 21.5px 0px;
-    padding: 0px;
-    border-radius: 15px;
+    box-shadow: 0 0 0.6em 0.3em #F2F2F2;
+    margin: 1.3em 0;
+    padding: 0;
+    border-radius: 0.9em;
 }
 
 #vieuxport img, #calanques img {
-    height: 430px;
+    height: 26.875em;
 }
 
 #frotdepomegues img {
-    height: 220px;
+    height: 13.75em;
 }
 
 #notredame img, #parclongchamp img {
-    height: 170px;
+    height: 10.625em;
 }
 
 #ilesdufrioul img {
-    height: 120px;
+    height: 7.5em;
 }
 
 .activitesDuo {
@@ -498,8 +498,8 @@ h2{
 
 #activites img {
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-    width: 300px;
+    border-radius: 1em 1em 0 0;
+    width: 18.75em;
 }
 
 /*ACTIVITES A MARSEILLE*/
@@ -516,22 +516,22 @@ h2{
     position: absolute;
     left: 0;
     right: 0;
-    padding-bottom: 20px;
+    padding-bottom: 3.1em;
 }
 
 ul {
     list-style: none;
-    margin-left: 0px;
-    padding-left: 0px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .footer li {
-    padding: 5px 0px 5px 0px;
+    padding: 0.3em 0 0.3em 0;
 }
 
 .containerfooter {
-    padding-top: 30px;
-    margin-left: -180px;
+    padding-top: 1.87em;
+    margin-left: -11.25em;
 }
 
 /*Footer*/
