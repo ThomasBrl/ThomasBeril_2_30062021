@@ -44,12 +44,8 @@ a {
     color: #000000; 
 }
 
-.star{
+.star {
     display: inline-flex;
-}
-
-.texteGras {
-    font-weight: bold;
 }
 
 .main {
@@ -61,12 +57,20 @@ h1 {
     font-size: 1.25em;
 }
 
-h2{
+h2 {
     font-size: 1em;
 }
 
-.borderNone{
-    border: none;
+.fas {
+    color:#0065FC;
+    padding: 5px 5px;
+    border-radius: 100%;
+}
+
+#populaires .fas {
+    color:#000000;
+    padding-right: 0px;
+    font-size: 1.2em;
 }
 
 .bluestar {
@@ -77,209 +81,196 @@ h2{
     color: #0065fc;
 }
 
-.colorBlueClear {
-    color: #deebff;  
-}
-
 .greystar {
   color: #f2f2f2;  
-}
-
-.backGrey {
-    background: #F2F2F2;
-}
-
-.flexcentre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /*GENERAL*/
 
 /*HEADER*/
 
-.sizeNav {
-    height: 100%;
-}
-
-.sizeLiens {
+header
+{
     width: 100%;
-}
-
-.flexaround {
+    height: 5%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 45%;
+    justify-content: space-between;
 }
 
-.sizeLien {
-    width: 8.75em;
-    height: 6.1875em;    
+#logo
+{
+    padding-top: 40px;
 }
 
-.sizeLien12 {
-    margin-left: 60%;
+#ancres
+{
+    margin: 20px 0;
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-.bordernav {
-    border-top: solid 0.0625em transparent;
+#ancreInscription a
+{
+    color: #0065FC;
+    font-weight: bold;
 }
 
-.bordernav:hover {
-    border-top: 0.0625em solid #0065fc;
-    cursor: pointer;
-}   
+#ancreHebergement a
+{
+    border-top: solid 2px #0065FC;
+    padding-top: 48px;
+    color: #0065FC;
 
-.bordernav:hover > a {
-    color: #0065fc;
-}
-
-.colorlink {
-    color: blue;
-}
-
-.register {
-    color: #0065fc;
-    font-weight: 700;
 }
 
 /*HEADER*/
 
 /*SEARCHSECTION*/
 
-.searchsection {
-    height: 21em;
+#searchsection h1 {
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
-.borduresearch {
-    height: 3.3em;
-    width: 25em;
-    border-radius: 1.3em;
-    border: 0.03125em solid #F2F2F2 ;
-    background: #f2f2f2;
+#map {
+    background-color: #F2F2F2;
+    padding: 17px 16px 15px 16px;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px; 
 }
 
-.iconSize {
-    height: 3.125em;
-    width: 4em;
-    border-radius: 1em 0 0 1em;
+#map i {
+    color: #000000; 
 }
 
-.recherche {
-    height: 2.9em;
-    width: 12em;
-    font-size: 1.125em;
-    color: black;
-    font-weight: bold;    
+input {
+    width: 234px;
+    height: 47px;
+    margin: 0px;
+    padding: 0 0 0 15px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-right:none;
+    font-weight: bold;
+    font-size: 100%;
 }
 
-.paddingSearch {
-    padding-left: 1.25em;
+.value { 
+    color: #000000;  
+    opacity: 1; 
 }
 
-.buttonSearch {
-   height: 3.5em;
-   width: 10em;
-   color: white;
-   font-weight: bold;
-   cursor: pointer;
-   border-radius: 0 0.625em 0.625em 0; 
+.form button {
+    background-color: #0065FC;
+    color: #FFFFFF;
+    width: 134px;
+    height: 51px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border:none;
+    margin-bottom:30px;
+    padding: 4px 8px 1px 8px;
 }
 
-.backblue {
-    background-color: #0065fc;
-    border: none;   
+form button .fas {
+    display: none
+}
+
+#buttonTXT {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 /*SEARCHSECTION*/
 
 /*FILTRES*/
 
-.margFiltre {
-    margin-top: 3.125em;
-    margin-bottom: 2.5em;
-}
-
-.filtre {
+#filtre {
     display: flex;
-    align-items: center;    
+    flex-direction: row;
 }
 
-.margFiltreTitre {
-    margin-right: 1.25em; 
-}
-
-.filtreIcons {
-    margin-left: -0.125em;
-    border-radius: 1.5625em;
-    width: 2.55em;
-    height: 2.55em;
-    color: #0065fc;
-    background-color: #deebff;
-}
-
-.filtreTexteIcons {
-    margin-left: 0.125em;
-    border: 0.125em solid #F2F2F2;
-    height: 3.125em;
-    border-radius: 1.875em;
-    margin-right: 1.25em;
-}
-
-.flexBetween {
+.filtreButton {
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    flex-direction: row;
+    justify-content: center;
 }
 
-.filtreTexteIcons:hover > .filtreTexte {
-    color: #0065fc;
-}
-
-.filtreTexteIcons:hover > .filtreIcons {
-    color: white;
-    background-color: #0065fc;
-}
-
-.filtreTexte {
+.filtreBoutton span {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    background-color: #FFFFFF;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;    
     font-weight: bold;
-    height: 3.125em;
-    padding-right: 1.25em;
-    padding-left: 1.25em;
-    border-radius: 0 1.5625em 1.5625em 0;
+    border-left:none;
+    margin: 0 20px 0 -20px;
+    padding: 0px 20px 0 25px;
 }
+
+#filtre h3 {
+    margin:16px 30px 16px 5px;
+    font-weight: bold;
+}
+
+.fa-money-bill-wave {
+    padding: 17px 15px 17px 15px;
+}
+
+.fa-child {
+    padding: 17px 19px 17px 19px;
+}
+
+.fa-heart {
+    padding: 17px;
+}
+
+.fa-dog {
+    padding: 17px 16px 17px 16px;
+}
+
+#filtre .fas {
+    border-radius: 50%;
+    background-color: #deebff;
+    margin-right: 0px;
+    position: relative;
+    
+}
+
+.bouton:hover {
+    color:white;
+    background-color: #0065FC;
+    border-color: #0065fd;
+    transition: all 0.8s 0s;
+}
+
 /*FILTRES*/
 
 /*INFOS ICONE*/
-.infos {
-    display: flex;
-    align-items: center;
+
+#info {
+    margin: 30px 0px 30px 5px;
+    display: inline-block;
 }
 
-.infobubble {
-    width: 1.5em;
-    height: 1.5em;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.5em;
-    margin-right: 0.8em;
+#info .fas {
+    border: 1px solid #dedede;
+    padding: 4px 7px 4px 7px;
+}
+
+#info i {
+    position: absolute;
+    margin-top: 15px;
+}
+
+#info p {
+    margin-left: 25px;
 }
 
 /*INFOS ICONE*/
-
 
 /* HEBERGEMENTS */
 
@@ -454,7 +445,7 @@ h2{
     justify-content: space-between;
 }
 
-.acitiviteSelection:hover {
+.activiteSelection:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -465,7 +456,7 @@ h2{
     font-weight: bolder;
 }
 
-.acitiviteSelection {
+.activiteSelection {
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 0.6em 0.3em #F2F2F2;
@@ -505,7 +496,7 @@ h2{
 /*ACTIVITES A MARSEILLE*/
 
 
-/*Footer*/
+/*FOOTER*/
 
 .footer {
     background-color: #F2F2F2 ;
@@ -534,4 +525,274 @@ ul {
     margin-left: -11.25em;
 }
 
-/*Footer*/
+/*FOOTER*/
+
+/*RESPONSIVE*/
+
+@media all and (min-width: 1440px){
+    
+    .body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .containerfooter {
+        margin: 0 160px;
+    }
+
+    .footer ul {
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (max-width:1439px){
+    
+    .hebCard{
+        width: 210px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hebergementsTxt {
+        padding: 5px 3px 0 3px;
+    }
+
+    .cardLPP {
+        height: 140px;
+        width: 310px;
+    }
+
+    #activites img {
+        width: 100%;
+        max-width: 320px;
+        min-width: 240px;
+    }
+
+    .activiteSelection {
+        margin: 21px 10px;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    
+    .ancres {
+        margin: 0;
+    }
+
+    .ancreHebergements a {
+        padding-top: 28px;
+    }
+    
+    .ancre_hover a:hover {
+        border-top: solid 2px #0065fc
+    }
+
+    #hebergements {
+        height: 860px;
+    }
+
+    .titreLPP {
+        padding: 10px 20px 0px 20px;
+    }
+
+    .cardLPP {
+        height: 170px;
+        flex-direction: row;
+        width: 250px;
+    }
+
+    .cardLPP img {
+        width: 120px;
+    }
+
+    .prix {
+        margin: 0 0 5px 0;
+    }
+
+    .cardLPP li {
+        padding-bottom: 5px;
+    }
+
+    #populaires {
+        height: 860px;
+    }
+
+    .activiteSelection {
+        margin: 15px;
+    }
+
+    #activites img {
+        min-width: 205px;
+        max-width: 250px;
+        width: 100%
+    }
+
+    .containerfooter {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .filtreButton {
+        pointer-events: none;
+    }
+
+    .headerimg {
+        padding-top: 30px;
+    }
+
+    .ancres {
+        margin: 0;
+
+    }
+    
+    .ancreHebergements {
+        padding-top: 28px;
+    }
+
+    #searchsection h1 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #searchsection :nth-child(2) {
+        text-align: center;
+    }
+
+    .recherche i {
+        padding: 0 5px 5px 5px;
+    }
+
+    .recherche {
+        margin-bottom: 27px
+    }
+
+    input {
+        height: 50px;
+    }
+
+    #searchsection form {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .filtre h3 {
+        width: 100%;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .filtre {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filtre span {
+        margin-right: 7px;
+        padding-right: 12px
+    }
+
+    #premierBlock {
+        flex-direction: column-reverse;
+    }
+
+    #populaires {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .titreLPP {
+        padding: 10px 20px 10px 20px;
+    }
+
+    #populaires h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cardLPP {
+        width:400px;
+        height: 200px;
+    }
+
+    .cardLPP img {
+        width: 200px;
+    }
+
+    #hebergements {
+        width: 100%;
+        height: 100%;
+    }
+
+    #blockCards {
+        justify-content: space-evenly;
+    }
+
+    #hebergements h2 {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .hebCard {
+        margin: 10px 20px;
+        width: 300px;
+    }
+
+    #hebergements img {
+        height: 150px;
+    }
+
+    #activites h2 {
+        text-align: center;
+    }
+
+    .activitesCards {
+        flex-direction: column;
+        height: 100%; 
+    }
+
+    #activites img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .activitesDuo {
+        flex-direction: row;
+    }
+
+    .activiteSelection {
+        margin: 20px;
+    }
+
+    #frotdepomegues, #ilesdufrioul, #calanques, #notredame {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .containerfooter {
+        margin-left: 0;
+    }
+
+    footer h1, ul {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
