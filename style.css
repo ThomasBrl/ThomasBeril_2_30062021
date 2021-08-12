@@ -24,10 +24,10 @@
     font-display: swap;
 }
 
-/*GENERAL*/
+/* GENERALES */
 
 html {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0 3.5%;
@@ -35,30 +35,23 @@ html {
 }
 
 body {
+    max-width: 1440px;
     margin: 0;
-    max-width: 90em;    
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 a {
     text-decoration: none;
-    color: #000000; 
-}
-
-.star {
-    display: inline-flex;
-}
-
-.main {
-    margin: 0.625em 0.625em;
-    padding: 1.25em 1.25em;
-}
-
-h1 {
-    font-size: 1.25em;
-}
-
-h2 {
-    font-size: 1em;
+    color: #000000;
 }
 
 .fas {
@@ -73,37 +66,36 @@ h2 {
     font-size: 1.2em;
 }
 
-.bluestar {
-  color: #0065fc;  
-}
-
-.colorBlue {
-    color: #0065fc;
+.star .fas, .bluestar {
+    color:#0065FC;
+    padding: 0px;
+    margin: 0px;
 }
 
 .greystar {
-  color: #f2f2f2;  
+    color: #F2F2F2;
 }
 
-/*GENERAL*/
+.star {
+    display: inline-flex;
+}
 
-/*HEADER*/
+/* GENERALES */
 
-header
-{
+/* HEADER */
+
+header {
     width: 100%;
     height: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-#logo
-{
+#logo {
     padding-top: 40px;
 }
 
-#ancres
-{
+#ancres {
     margin: 20px 0;
     padding: 30px 0 0 0;
     display: flex;
@@ -111,23 +103,21 @@ header
     flex-direction: row;
 }
 
-#ancreInscription a
-{
+#ancreInscription a {
     color: #0065FC;
     font-weight: bold;
 }
 
-#ancreHebergement a
-{
+#ancreHebergement a {
     border-top: solid 2px #0065FC;
     padding-top: 48px;
     color: #0065FC;
 
 }
 
-/*HEADER*/
+/* HEADER */
 
-/*SEARCHSECTION*/
+/* BOUTON DE RECHERCHE */
 
 #searchsection h1 {
     font-weight: 700;
@@ -138,11 +128,12 @@ header
     background-color: #F2F2F2;
     padding: 17px 16px 15px 16px;
     border-top-left-radius: 20px 20px;
-    border-bottom-left-radius: 20px 20px; 
+    border-bottom-left-radius: 20px 20px;
+    margin: 0 -5px;
 }
 
 #map i {
-    color: #000000; 
+    color: #000000;
 }
 
 input {
@@ -157,12 +148,12 @@ input {
     font-size: 100%;
 }
 
-.value { 
-    color: #000000;  
-    opacity: 1; 
+::placeholder { 
+    color: #000000;  /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
 }
 
-.form button {
+form button {
     background-color: #0065FC;
     color: #FFFFFF;
     width: 134px;
@@ -175,7 +166,7 @@ input {
 }
 
 form button .fas {
-    display: none
+    display: none;
 }
 
 #buttonTXT {
@@ -183,11 +174,11 @@ form button .fas {
     font-size: 1.1em;
 }
 
-/*SEARCHSECTION*/
+/* BOUTON DE RECHERCHE */
 
-/*FILTRES*/
+/* FILTRES */
 
-#filtre {
+#filtres {
     display: flex;
     flex-direction: row;
 }
@@ -195,10 +186,10 @@ form button .fas {
 .filtreButton {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center ;
 }
 
-.filtreBoutton span {
+.filtreButton span {
     display: flex;
     align-items: center;
     border: 2px solid #d9d9d9;
@@ -211,7 +202,7 @@ form button .fas {
     padding: 0px 20px 0 25px;
 }
 
-#filtre h3 {
+#filtres p {
     margin:16px 30px 16px 5px;
     font-weight: bold;
 }
@@ -232,22 +223,22 @@ form button .fas {
     padding: 17px 16px 17px 16px;
 }
 
-#filtre .fas {
+#filtres .fas {
     border-radius: 50%;
     background-color: #deebff;
     margin-right: 0px;
     position: relative;
-    
+
 }
 
-.bouton:hover {
+.button:hover  {
     color:white;
     background-color: #0065FC;
     border-color: #0065fd;
-    transition: all 0.8s 0s;
+    transition: all 0.5s 0s;
 }
 
-/*FILTRES*/
+/* FILTRES */
 
 /*INFOS ICONE*/
 
@@ -277,11 +268,11 @@ form button .fas {
 #premierBlock {
     display: flex;
     width: 100%;
-    margin: 0 0 2.5em 0;
+    margin: 0 0 40px 0;
 }
 
 #hebergements span {
-    padding: 2.1em 0 2.5em 2.9em;
+    padding: 20px 0 40px 30px;
     font-weight: bold;
 }
 
@@ -289,16 +280,16 @@ form button .fas {
     display: flex;
     flex-wrap: wrap;
     align-items:stretch;
-    border-radius:1em;
+    border-radius:20px;
     background-color: #F2F2F2;
     margin-right: 3%;
     width: 65%;
-    height: 39em;
+    height: 626px;
 }
 
 #hebergements h2 {
-    padding-left: 2.5em;
-    margin: 1.7em 0 0 0;
+    padding-left: 30px;
+    margin: 40px 0 0 0;
 }
 
 #blockCards {
@@ -309,15 +300,15 @@ form button .fas {
 }
 
 .hebCard {
-    width: 15.6em;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.3em;
+    padding: 5px;
     background-color: #FFFFFF;
-    margin: 0.6em;
-    border-radius: 1.2em;
-    box-shadow: 0 0 1em 1em #F2F2F2;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #F2F2F2;
 }
 
 .hebCard:hover {
@@ -326,23 +317,23 @@ form button .fas {
 }
 
 #hebergements img {
-    height: 7.2em;
+    height: 115px;
     object-fit: cover;
-    border-radius: 1em 1em 0 0;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .hebergementsTxt {
-    padding: 0.3em 0 0 0.6em;
+    padding: 5px 0 0 10px;
 }
 
 #hebergements p, ul {
     width: 100%;
-    padding: 0.3em 0;
-    margin: 0;
+    padding: 5px 0px;
+    margin: 0px;
 }
 
-.hebergementsTxt :first-child, .cubeDetails :nth-child(1) {
-    font-weight: 900 ;
+.hebergementsTxt :first-child, .hotel_details :nth-child(1) {
+    font-weight: 700 ;
 }
 
 /* HEBERGEMENTS */
@@ -353,21 +344,21 @@ form button .fas {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2 ;
-    border-radius: 1em;
-    margin-right: 0;
+    border-radius: 20px;
+    margin-right: 0px;
     width: 32%;
-    height: 39em;
+    height: 626px;
 }
 
 #titreLPP {
     display: flex;
     justify-content: space-between;
-    padding: 0.6em 2.5em 0 1.8em;
+    padding: 10px 40px 0px 30px;
     align-items: center;
 }
 
 #titreLPP h2 {
-    margin: 1.8em 0 1.3em 0;
+    margin: 30px 0 20px 0;
 }
 
 #blockcardslpp {
@@ -384,40 +375,40 @@ form button .fas {
 }
 
 .cardLPP {
-    height: 8.75em;
+    height: 140px;
     display: flex;
-    width: 22.5em;
-    padding: 0.3em;
+    width: 370px;
+    padding: 5px;
     background-color: #FFFFFF;
-    margin: 0.625em;
-    border-radius: 1em;
-    box-shadow: 0 0 0.6em 0.3em #F2F2F2;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #F2F2F2;
 }
 
 .cardLPP img {
-    width: 8.75em;
+    width: 140px;
     object-fit: cover;
-    border-radius: 1em 0 0 1em;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .cubeDetails {
     display: flex;
     flex-direction: column;
-    margin-left: 0.6em;
+    margin-left: 10px;
     justify-content: center;
-    width: 11.25em;
+    width: 180px;
 }
 
 .hotelName {
-    margin: 0.9em 0 0.6em 0;
+    margin: 15px 0 10px 0;
 }
 
 .prix {
-    margin: 0 0 1.8em 0;
+    margin: 0 0 30px 0;
 }
 
 .cardLPP li {
-    padding-bottom: 0.9em;
+    padding-bottom: 15px;
 }
 
 /* LES PLUS POPULAIRES */
@@ -427,11 +418,11 @@ form button .fas {
 #activites {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.9em;
+    margin-bottom: 30px;
 }
 
 #activitesTitre {
-    margin: 3.1em 0 0.6em 0;
+    margin: 20px 0 10px 0;
 }
 
 #activites h2 {
@@ -451,34 +442,34 @@ form button .fas {
 }
 
 #activites p {
-    padding: 0.9em 0 0.9em 0.6em;
-    margin: 0;
+    padding: 15px 0px 15px 10px;
+    margin: 0px;
     font-weight: bolder;
 }
 
 .activiteSelection {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 0.6em 0.3em #F2F2F2;
-    margin: 1.3em 0;
-    padding: 0;
-    border-radius: 0.9em;
+    box-shadow: 0px 0px 10px 5px #F2F2F2;
+    margin: 21.5px 0px;
+    padding: 0px;
+    border-radius: 15px;
 }
 
 #vieuxport img, #calanques img {
-    height: 26.875em;
+    height: 430px;
 }
 
-#frotdepomegues img {
-    height: 13.75em;
+#fortdepomegues img {
+    height: 220px;
 }
 
 #notredame img, #parclongchamp img {
-    height: 10.625em;
+    height: 170px;
 }
 
 #ilesdufrioul img {
-    height: 7.5em;
+    height: 120px;
 }
 
 .activitesDuo {
@@ -489,16 +480,15 @@ form button .fas {
 
 #activites img {
     object-fit: cover;
-    border-radius: 1em 1em 0 0;
-    width: 18.75em;
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
 }
 
 /*ACTIVITES A MARSEILLE*/
 
-
 /*FOOTER*/
 
-.footer {
+footer {
     background-color: #F2F2F2 ;
     margin: auto;
     width: 100%;
@@ -507,36 +497,30 @@ form button .fas {
     position: absolute;
     left: 0;
     right: 0;
-    padding-bottom: 3.1em;
+    padding-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.footer li {
-    padding: 0.3em 0 0.3em 0;
+footer li {
+    padding: 5px 0px 5px 0px;
 }
 
 .containerfooter {
-    padding-top: 1.87em;
-    margin-left: -11.25em;
+    padding-top: 30px;
+    margin-left: -180px;
 }
 
 /*FOOTER*/
 
 /*RESPONSIVE*/
 
-@media all and (min-width: 1440px){
-    
-    .body{
+@media all and (min-width:1440px){
+
+    body {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .footer {
+    footer {
         justify-content: center;
     }
 
@@ -544,18 +528,19 @@ ul {
         margin: 0 160px;
     }
 
-    .footer ul {
+    footer ul {
         width: 230px;
     }
 
 }
 
-@media screen and (max-width: 1200px) and (max-width:1439px){
-    
-    .hebCard{
+@media (min-width:1200px) and (max-width:1439px) {
+
+    .hebCard {
         width: 210px;
         flex-direction: column;
         justify-content: center;
+    
     }
 
     .hebergementsTxt {
@@ -574,30 +559,36 @@ ul {
     }
 
     .activiteSelection {
-        margin: 21px 10px;
+        margin: 21.5px 10px;
     }
 
 }
 
-@media screen and (min-width:992px) and (max-width:1199px){
-    
-    .ancres {
+@media (min-width:992px) and (max-width:1199px) {
+
+    #ancres {
         margin: 0;
     }
 
-    .ancreHebergements a {
+    #ancreHebergement a {
         padding-top: 28px;
     }
     
     .ancre_hover a:hover {
-        border-top: solid 2px #0065fc
+        border-top: solid 2px #0065FC;
+        padding-top: 25px;
+    }
+    
+    #hebergements h2 {
+        padding: 0 0 10px 30px;
     }
 
-    #hebergements {
+    #hebergements
+    {
         height: 860px;
     }
 
-    .titreLPP {
+    #titreLPP {
         padding: 10px 20px 0px 20px;
     }
 
@@ -630,33 +621,37 @@ ul {
     #activites img {
         min-width: 205px;
         max-width: 250px;
-        width: 100%
+        width: 100%;
     }
 
-    .containerfooter {
-        margin-left: 0;
+    .containerfooter  {
+        margin-left: 0px;
     }
+
 }
 
-@media (min-width:768px) and (max-width:991px){
+@media (min-width:768px) and (max-width:991px) {
+
     .filtreButton {
         pointer-events: none;
     }
 
-    .headerimg {
+    #logo {
         padding-top: 30px;
     }
 
-    .ancres {
+    #ancres
+    {
         margin: 0;
-
+        width: 50%;
     }
-    
-    .ancreHebergements {
+
+    #ancreHebergement a {
         padding-top: 28px;
     }
 
-    #searchsection h1 {
+    #searchsection h1
+    {
         margin-top: 40px;
         text-align: center;
     }
@@ -665,11 +660,11 @@ ul {
         text-align: center;
     }
 
-    .recherche i {
+    #map i {
         padding: 0 5px 5px 5px;
     }
 
-    .recherche {
+    #map {
         margin-bottom: 27px
     }
 
@@ -680,20 +675,20 @@ ul {
     #searchsection form {
         display: flex;
         justify-content: center;
-    }
-    
-    .filtre h3 {
+    } 
+
+    #filtres p {
         width: 100%;
         text-align: center;
         margin: 30px;
     }
-
-    .filtre {
+   
+    #filtres {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .filtre span {
+    #filtres span {
         margin-right: 7px;
         padding-right: 12px
     }
@@ -709,7 +704,7 @@ ul {
         padding-bottom: 20px;
     }
 
-    .titreLPP {
+    #titreLPP {
         padding: 10px 20px 10px 20px;
     }
 
@@ -736,7 +731,8 @@ ul {
         justify-content: space-evenly;
     }
 
-    #hebergements h2 {
+    #hebergements h2
+    {
         text-align: center;
         width: 100%;
         padding-bottom: 20px;
@@ -755,7 +751,7 @@ ul {
         text-align: center;
     }
 
-    .activitesCards {
+    #activitesCards {
         flex-direction: column;
         height: 100%; 
     }
@@ -773,7 +769,7 @@ ul {
         margin: 20px;
     }
 
-    #frotdepomegues, #ilesdufrioul, #calanques, #notredame {
+    #fortdepomegues, #ilesdufrioul, #notredame, #parclongchamp {
         width: 45%;
     }
 
@@ -785,10 +781,323 @@ ul {
         margin-left: 0;
     }
 
-    footer h1, ul {
+    footer h3, ul {
         text-align: center;
     }
 }
+
+@media (min-width:576px) and (max-width:767px) {
+
+    html {
+        margin: 0;
+    }
+
+    #ancreHebergement a {
+        padding-top: 28px;
+    }
+
+    .filtreButton {
+        pointer-events: none;
+    }
+
+    header {
+        justify-content: flex-end;
+        margin: 0 0 40px 0;
+    }
+
+    #logo {
+        position: absolute;
+        left: 0;
+        padding: 3% 3% 5% 3.5%;
+    }
+
+    #ancres {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    #searchsection {
+        margin: 3.5%;
+    }
+
+    #filtres {
+        flex-wrap: wrap;
+    }
+
+    #filtres p {
+        width: 100%;
+    }
+
+    .filtreButton {
+        margin: 10px 0;
+    }
+
+    form button {
+        width: 80px;
+    }
+
+    #buttonTXT {
+        display: none;
+    }
+
+    form button .fas {
+        display: initial;
+        color: #FFFFFF;
+    }
+
+    #premierBlock {
+        flex-direction: column-reverse;
+    }
+
+    #populaires {
+        width: 100%;
+        border-radius: initial;
+    }
+
+    #populaires a, .cardLPP {
+        width: 95%;
+    }
+
+    #populaires img
+    {
+        width: 40%;
+    }
+
+    #hebergements {
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+    }
+
+    #hebergements h2 {
+        padding-bottom: 10px;
+    }
+
+    #blockCards {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #activites h2 {
+        padding-left: 30px;
+    }
+
+    #activitesCards {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .activiteSelection {
+        margin: 21.5px;
+    }
+
+
+    #activites img {
+        width: 100%;
+        height: 10em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .containerfooter{
+        padding-left: 40px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:575px) {
+
+    html
+    {
+        margin: 15px 0 0 0;
+    }
+
+    .filtreButton {
+        pointer-events: none;
+    }
+
+    #logo {
+        padding: 15px 0 0 25px;
+        position: absolute;
+    }
+
+    #ancres {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #ancreHebergement {
+        order: 2;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 3px #0065FC;
+        padding: 45px 0 15px 0;
+    }
+
+    #ancreHebergement a {
+        border-top: 0;
+        padding: 0;
+    }
+
+    #ancreActivites {
+        order: 3;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 3px #F2F2F2;
+        padding: 45px 0 15px 0;
+    }
+
+    #ancreInscription {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 20px 0px 0px;
+    }
+
+    #searchsection {
+        margin: 0px 4% 0px 4%;
+    }
+
+    #searchsection h1 {
+        margin-top: 30px
+    }
+
+    #map i {
+        padding: 0 5px 5px 5px;
+    }
+
+    #filtres {
+        display: flex;
+        flex-wrap: wrap;
+        margin:0;
+    }
+
+    #filtres p {
+        width: 100%;
+    }
+
+    #filtres span {
+        margin-right: 10px;
+    }
+
+    .filtreButton {
+        margin: 10px 0;
+    }
+
+    form {
+       display: flex;
+       justify-content: center;
+       margin: 30px 0;
+    }
+
+    #map {
+        padding: 17px 16px 12px 16px;
+    }
+
+    form button {
+        width: 55px;
+        border-radius: 20px 20px;
+        margin: 0 0 0 -10px;
+    }
+
+    #buttonTXT {
+        display: none;
+    }
+
+    form button .fas {
+        display: initial;
+        color: #FFFFFF;
+    }
+
+    #premierBlock {
+        flex-direction: column-reverse;
+    }
+
+    #populaires {
+        width: 100%;
+        height: 100%;
+        border-radius: initial;
+        padding-bottom: 40px;
+    }
+
+    #populaires a, .cardLPP {
+        width: 95%;
+        margin: 5px 0px 0px 2px;
+    }
+
+    #titreLPP {
+        padding: 10px 40px 0 30px;
+    }   
+
+    #blockcardslpp {
+        margin: 0px 10px;
+    }
+
+    #populaires img {
+        width: 40%;
+    }
+
+    #hebergements {
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+    }
+
+    #hebergements h2 {
+        padding: 0 0 10px 20px;
+    }
+
+    .hebContainer {
+        width: 100%;
+    }
+
+    .hebCard {
+        width: 87%;
+        margin: 10px 20px;
+    }
+
+    #blockCards {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #activites h2 {
+        padding-left: 30px;
+    }
+
+    #activitesCards {
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+    }
+
+    .activiteSelection {
+        margin: 21.5px;
+    }
+
+    #activites img {
+        width: 100%;
+        height: 10em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .containerfooter {
+        padding-left: 30px;
+        margin-left: 0px;
+    }
+
+}
+    
 
 
 
